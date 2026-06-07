@@ -233,9 +233,15 @@ h2 {
   font-size: 1.1rem;
 }
 
+.about a {
+  color: var(--silver);
+  text-decoration-color: rgba(163, 75, 50, 0.45);
+  text-underline-offset: 0.2em;
+}
+
 .site-footer {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: center;
   gap: 1rem;
   padding: 2rem clamp(1rem, 4vw, 3rem);
@@ -249,14 +255,22 @@ h2 {
   margin: 0;
 }
 
-.site-footer p:nth-child(2) {
+.site-credit {
   text-align: center;
 }
 
+.site-contact {
+  color: var(--silver);
+  justify-self: start;
+}
+
 .site-footer a {
-  justify-self: end;
   text-decoration-color: rgba(163, 75, 50, 0.45);
   text-underline-offset: 0.2em;
+}
+
+.site-footer > a:last-child {
+  justify-self: end;
 }
 
 .post-page {
@@ -399,7 +413,7 @@ h2 {
     display: block;
   }
 
-  .site-footer p:nth-child(2),
+  .site-credit,
   .site-footer a {
     display: block;
     margin-top: 0.45rem;
