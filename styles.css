@@ -241,7 +241,7 @@ h2 {
 
 .site-footer {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: minmax(10rem, 1fr) minmax(16rem, 1.3fr) minmax(10rem, 1fr);
   align-items: center;
   gap: 1rem;
   padding: 2rem clamp(1rem, 4vw, 3rem);
@@ -255,13 +255,16 @@ h2 {
   margin: 0;
 }
 
-.site-credit {
+.site-footer__center {
   text-align: center;
+}
+
+.site-credit {
+  margin-top: 0.2rem;
 }
 
 .site-contact {
   color: var(--silver);
-  justify-self: start;
 }
 
 .site-footer a {
@@ -413,7 +416,7 @@ h2 {
     display: block;
   }
 
-  .site-credit,
+  .site-footer__center,
   .site-footer a {
     display: block;
     margin-top: 0.45rem;
